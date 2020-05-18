@@ -1,0 +1,59 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import 'homepage.css';
+@import 'blog-post.css';
+
+/* body */
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+/* header */
+header{
+    grid-area:hd;
+    border-bottom: 1px solid #000;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;  
+}
+
+nav a{
+    margin: 10px;
+    font-size: large;
+    text-decoration: none;
+}
+
+#blog-subtitle h3{
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* footer */
+footer{
+    grid-area:ft;
+    border-top: 1px solid #000;
+
+}
+.footer-container{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "cr si";
+}
+#copyright{
+    grid-area: cr;
+    padding-top: 1em;
+}
+#social-icons{
+    grid-area: si;
+    text-align: right;
+}
+#social-icons img{
+    width: 48px;
+    height: 48px;
+    border: 0;
+}
